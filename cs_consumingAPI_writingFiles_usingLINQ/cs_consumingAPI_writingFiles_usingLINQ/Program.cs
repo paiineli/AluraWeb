@@ -13,27 +13,30 @@ using (HttpClient client = new HttpClient())
         //musicas[1].ExibirDetalhesDaMusica();
         //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
         //LinqOrder.ExibirListaDeArtistasOrdenados(musicas);
-        ///Lin/Filter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
+        //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "U2");
 
-        //var musicasPreferidasPaineli = new MusicasPreferidas("Paineli");
-        //musicasPreferidasPaineli.AdicionarMusicasFavoritas(musicas[7]);
-        //musicasPreferidasPaineli.AdicionarMusicasFavoritas(musicas[14]);
-        //musicasPreferidasPaineli.AdicionarMusicasFavoritas(musicas[21]);
-        //musicasPreferidasPaineli.AdicionarMusicasFavoritas(musicas[28]);
-        //musicasPreferidasPaineli.AdicionarMusicasFavoritas(musicas[35]);
 
-        //musicasPreferidasPaineli.ExibirMusicasFavoritas();
+        //var musicasPreferidasDoDaniel = new MusicasPreferidas("Daniel");
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[377]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[4]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[6]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1467]);
 
-        var musicasPreferidasGimenes = new MusicasPreferidas("Gimenes");
-        musicasPreferidasGimenes.AdicionarMusicasFavoritas(musicas[6]);
-        musicasPreferidasGimenes.AdicionarMusicasFavoritas(musicas[12]);
-        musicasPreferidasGimenes.AdicionarMusicasFavoritas(musicas[18]);
-        musicasPreferidasGimenes.AdicionarMusicasFavoritas(musicas[24]);
-        musicasPreferidasGimenes.AdicionarMusicasFavoritas(musicas[30]);
+        //var musicasPreferidasEmilly = new MusicasPreferidas("Emy");
 
-        musicasPreferidasGimenes.ExibirMusicasFavoritas();
-        musicasPreferidasGimenes.GerarArquivoJson();
+        //musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[500]);
+        //musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[637]);
+        //musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[428]);
+        //musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[13]);
+        //musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[71]);
+
+        //musicasPreferidasEmilly.ExibirMusicasFavoritas();
+
+        //musicasPreferidasEmilly.GerarArquivoJson();
+
+
     }
     catch (Exception ex)
     {

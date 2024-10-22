@@ -4,18 +4,21 @@ namespace cs_consumingAPI_writingFiles_usingLINQ.Modelos;
 
 internal class MusicasPreferidas
 {
-    public string Nome { get; set; }
+    public string? Nome { get; set; }
     public List<Musica> ListaDeMusicasFavoritas { get; }
 
-    public MusicasPreferidas(string nome) 
-    { 
+    public MusicasPreferidas(string nome)
+    {
+
         Nome = nome;
         ListaDeMusicasFavoritas = new List<Musica>();
     }
+
     public void AdicionarMusicasFavoritas(Musica musica)
     {
         ListaDeMusicasFavoritas.Add(musica);
     }
+
     public void ExibirMusicasFavoritas()
     {
         Console.WriteLine($"Essas são as músicas favoritas -> {Nome}");
@@ -25,17 +28,17 @@ internal class MusicasPreferidas
         }
         Console.WriteLine();
     }
+
     public void GerarArquivoJson()
     {
         string json = JsonSerializer.Serialize(new
         {
             nome = Nome,
-            musicas = ListaDeMusicasFavoritas,
+            musicas = ListaDeMusicasFavoritas
         });
         string nomeDoArquivo = $"musicas-favoritas-{Nome}.json";
 
         File.WriteAllText(nomeDoArquivo, json);
-        Console.WriteLine($"Json foi criado com sucesso! {Path.GetFullPath(nomeDoArquivo)}");
+        Console.WriteLine($"O arquivo Json foi criado com sucesso! {Path.GetFullPath(nomeDoArquivo)}");
     }
-
 }
